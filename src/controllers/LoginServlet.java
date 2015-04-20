@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	private HttpSession session;
-	private int loginAttempts;
+	private static int loginAttempts;
 	private String url;
 	
        
@@ -48,6 +48,7 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// get current session
 		session = request.getSession();
+		loginAttempts++;
 		
 		// handle exceeded login attempts
 		if(loginAttempts > 2){
@@ -73,7 +74,7 @@ public class LoginServlet extends HttpServlet {
 				session.invalidate();
 				session = request.getSession(true);
 				session.setAttribute("customer", customer);
-				url = "UserAccount.jsp";
+				url = "userAccount.jsp";
 			} else {
 				// customer doesn't exist
 				String errorMessage = "Error: Unrecognized username and/or password<br>"
@@ -81,7 +82,7 @@ public class LoginServlet extends HttpServlet {
 				request.setAttribute("errorMessage", errorMessage);
 				
 				// track number of login attempts
-				session.setAttribute("loginAttempts", loginAttempts++);
+				session.setAttribute("loginAttempts", loginAttempts);
 				url = "index.jsp";
 			}
 		}
