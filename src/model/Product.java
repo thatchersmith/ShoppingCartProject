@@ -12,6 +12,7 @@ public class Product {
 	private String name;
 	private String url;
 	private double price;
+	private int quantity;
 	
 	public Product()
 	{
@@ -19,14 +20,16 @@ public class Product {
 		name = "No Name";
 		url = "/image.png";
 		price = 0.00;
+		setQuantity(0);
 	}
 	
-	public Product(int id, String name, String url, double price)
+	public Product(int id, String name, String url, double price, int quantity)
 	{
 		this.id = id;
 		this.name = name;
 		this.url = url;
 		this.price = price;
+		this.setQuantity(quantity);
 	}
 
 	public int getId() {
@@ -59,5 +62,13 @@ public class Product {
 
 	public void setPrice(double price) {
 		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 }
