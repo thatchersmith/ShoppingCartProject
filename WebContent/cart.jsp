@@ -5,8 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="Scripts/css/bootstrap.min.css"></link>
 </head>
 <body>
 
 </body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="Scripts/jquery-1.11.x.min.js"></script>
+<script src="Scripts/js/bootstrap.min.js"></script>
 </html>

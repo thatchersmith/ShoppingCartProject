@@ -5,8 +5,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Select Products to Purchase</title>
+<link rel="stylesheet" href="Scripts/css/bootstrap.min.css"></link>
 </head>
 <body>
-
+	<!-- Title -->
+	<div>
+	</div>
+	<!-- Body -->
+	<div>
+	</div>
+	<!-- Footer -->
+	<div>
+	</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="Scripts/jquery-1.11.x.min.js"></script>
+<script src="Scripts/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Register</title>
+<link rel="stylesheet" href="Scripts/css/bootstrap.min.css"></link>
 </head>
 <body>
 	<form action="register" method="POST">
@@ -26,5 +27,8 @@
 		<input type=submit name=submit value="Login">
 		<br>
 	</form>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="Scripts/jquery-1.11.x.min.js"></script>
+<script src="Scripts/js/bootstrap.min.js"></script>
 </body>
 </html>
