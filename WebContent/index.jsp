@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login/Register Page</title>
+<link rel="stylesheet" href="../style.css"></link>
 <link rel="stylesheet" href="Scripts/css/bootstrap.min.css"></link>
 </head>
 <body>
@@ -15,24 +16,29 @@
 <!-- Body -->
 <div>
 	<div class="panel panel-default">
-	 	<div class="panel-body">
-		  	<form class="navbar-form navbar-left" id=loginForm action=login method=post>
+	 	<div class="panel-body" style="background-color:#DBECF9; margin:0 auto; text-align:center; width:350px; box-shadow:0px 0px 2px 0px grey;">
+		  	<form class="navbar-form" id=loginForm action=login method=post>
 			<h1>Log In</h1>
-			<input type=text name=uName placeholder=username required>
+			<div class="input-group">
+				<span class="input-group-addon">Username:</span>
+				<input class="form-control" type=text name=uName required>
+			</div>
 			<br>
-			<input type=password name=password placeholder=password required>
+			<div class="input-group">
+				<span class="input-group-addon">Password:</span>
+				<input class="form-control" type=password name=password required>
+			</div>
+			</br>
 			<br>
-			<input type=submit name=submit value="Login">
+			<button type="submit" class="btn btn-default">Submit</button>
+			</br>
 			<br>
 			</form>
-			<div class="navbar-right">
-				<a href="registerForm.jsp">Register</a>
+			<div>
+				<h3><a href="registerForm.jsp">Register</a></h3>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- Footer -->
-<div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
