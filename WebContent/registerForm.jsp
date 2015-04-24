@@ -9,9 +9,19 @@
 <body>
 	<form action="register" method="POST">
 		<h1>Log In</h1>
-		<input type=text name=uName placeholder=username required>
+		<input type=text name=uName required>
 		<br>
-		<input type=password name=password placeholder=password required>
+		<input type=password name=password required>
+		<br>
+		<input type=text name=fName required>
+		<br>
+		<input type=text name=lName required>
+		<br>
+		<input type=text name=street required>
+		<br>
+		<input type=text name=zipcode required>
+		<br>
+		<input type=text name=state required>
 		<br>
 		<input type=submit name=submit value="Login">
 		<br>

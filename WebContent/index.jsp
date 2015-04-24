@@ -7,7 +7,15 @@
 <title>Login/Register Page</title>
 </head>
 <body>
-
+<!-- Header -->
+<div class="header">
+</div>
+<!-- Body -->
+<div>
+</div>
+<!-- Footer -->
+<div>
+</div>
 <form id=loginForm action=login method=post>
 	<h1>Log In</h1>
 	<input type=text name=uName placeholder=username required>
