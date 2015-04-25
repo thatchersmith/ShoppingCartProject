@@ -5,28 +5,40 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Register</title>
-<link rel="stylesheet" href="Scripts/css/bootstrap.min.css"></link>
 </head>
 <body>
 	<form action="register" method="POST">
-		<h1>Log In</h1>
-		<input type=text name=uName required>
+		<h1>Fill out the required fields.</h1>
+		<label>First Name:</label>
+		<input type=text name=fName placeholder="first name" required>
 		<br>
-		<input type=password name=password required>
+		<label>Last Name:</label>
+		<input type=text name=lName placeholder="last name" required>
 		<br>
-		<input type=text name=fName required>
+		<label>Address:</label>
+		<input type=text name=address placeholder="street" required>
 		<br>
-		<input type=text name=lName required>
+		<label>City:</label>
+		<input type=text name=city placeholder="city" required>
 		<br>
-		<input type=text name=street required>
+		<label>State:</label>
+		<input type=text name=state placeholder="state" required>
 		<br>
-		<input type=text name=zipcode required>
+		<label>Zip:</label>
+		<input type=text name=zip placeholder="zip" required>
 		<br>
-		<input type=text name=state required>
+		<label>Username:</label>
+		<input type=text name=username placeholder="username" required>
 		<br>
-		<input type=submit name=submit value="Login">
+		<label>Password:</label>
+		<input type=text name=password placeholder="password" required>
 		<br>
+		<input type=submit name=submit value="Register">
+		<br>
+	
 	</form>
+</body>
+</html>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="Scripts/jquery-1.11.x.min.js"></script>
 <script src="Scripts/js/bootstrap.min.js"></script>
